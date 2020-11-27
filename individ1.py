@@ -13,6 +13,6 @@ if __name__ == '__main__':
 # Найти искомое произведение
     r = 1
     for item in A:
-            if item >= 0:
+            if item > 0:
                 r *= item
     print(r)

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import math
 
 
 if __name__ == '__main__':
@@ -17,8 +18,8 @@ if __name__ == '__main__':
     sum = 0
     for item in A:
         if item > 0:
-            round(item)
-            sum += item
+            cel = int(math.floor(item))
+            sum += cel
         else:
             sum = 0
     print(f"Сумма элементов после последнего отрицательного элемента списка = {sum}")
@@ -33,6 +34,4 @@ if __name__ == '__main__':
             list_3.append(item)
     list_sum = list_2 + list_3
     print(list_sum)
-
-
 
